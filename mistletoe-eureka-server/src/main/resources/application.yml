@@ -1,0 +1,15 @@
+server:
+  port: 8040
+eureka:
+  # 指定Eureka的IP
+  instance:
+    hostname: localhost
+  client:
+    # 表示是否将服务注册到Eureka服务器，因为这是服务端所有不用注册
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      # 设置Eureka-Service的本机地址 客户端访问Eureka服务就访问此地址
+      # defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      # Eureka 集群进行互相注册
+      default-zone: http://localhost:8040/eureka/
