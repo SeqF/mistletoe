@@ -6,6 +6,9 @@ spring:
     name: eureka-consumer
 
 eureka:
+  instance:
+    instance-id: eureka-consumer:${server.port}
+    prefer-ip-address: true
   client:
     service-url:
       defaultZone: http://localhost:8040/eureka/
