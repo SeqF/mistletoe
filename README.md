@@ -1,2 +1,2 @@
 # mistletoe
-java spring cloud learing
+java spring cloud learning
